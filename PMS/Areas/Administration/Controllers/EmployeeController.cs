@@ -31,19 +31,17 @@ namespace PMS.Areas.Administration.Controllers
             return View();
         }
 
-           public ActionResult GetEmployeelist()
+        public ActionResult GetEmployeelist()
         {
 
-              testc;
+            testc;
             return View();
 
         }
 
-
-
-
-
-
-
+        public ActionResult GetSample()
+        {
+            return View();
+        }
     }
 }
