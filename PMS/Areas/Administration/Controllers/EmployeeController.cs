@@ -33,7 +33,10 @@ namespace PMS.Areas.Administration.Controllers
 
            public ActionResult GetEmployeelist()
         {
+
+              testc;
             return View();
+
         }
 
 
