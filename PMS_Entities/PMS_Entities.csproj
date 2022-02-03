@@ -41,7 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmployeeInfoEntity.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="MessageEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TableViewDefaultFilterEntity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PMS_Utilities\PMS_Utilities.csproj">
+      <Project>{dfade878-4fb8-4494-8a43-ab4bc60777d5}</Project>
+      <Name>PMS_Utilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -41,12 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmployeeInfoBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PMS\PMS.csproj">
-      <Project>{b631a5de-a1ec-40f3-94f0-619f4df8f135}</Project>
-      <Name>PMS</Name>
+    <ProjectReference Include="..\PMS_DAL\PMS_DAL.csproj">
+      <Project>{c96c75e2-5b55-4917-94ca-cdb6d7297baf}</Project>
+      <Name>PMS_DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\PMS_Entities\PMS_Entities.csproj">
       <Project>{cb0f244d-e424-4d34-9646-d7d8612d8c2e}</Project>
@@ -56,6 +57,9 @@
       <Project>{dfade878-4fb8-4494-8a43-ab4bc60777d5}</Project>
       <Name>PMS_Utilities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -140,6 +140,9 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\Administration\Views\web.config" />
+    <Content Include="Areas\Administration\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Administration\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Administration\Views\Employee\EmployeeInfo.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -169,8 +172,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Administration\Data\" />
-    <Folder Include="Areas\Administration\Views\Employee\" />
-    <Folder Include="Areas\Administration\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -187,6 +188,10 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PMS_BLL\PMS_BLL.csproj">
+      <Project>{cf0edbe7-2f9b-4dd0-8bd7-06411c61c633}</Project>
+      <Name>PMS_BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PMS_Entities\PMS_Entities.csproj">
       <Project>{cb0f244d-e424-4d34-9646-d7d8612d8c2e}</Project>
       <Name>PMS_Entities</Name>
