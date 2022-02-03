@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.TypeScript.MSBuild.4.5.3\build\Microsoft.TypeScript.MSBuild.props" Condition="Exists('..\packages\Microsoft.TypeScript.MSBuild.4.5.3\build\Microsoft.TypeScript.MSBuild.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -133,6 +134,35 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\ui.jqgrid.css" />
+    <Content Include="Content\ui.jqgrid.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -143,17 +173,218 @@
     <Content Include="Areas\Administration\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Administration\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Administration\Views\Employee\EmployeeInfo.cshtml" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-ar.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-bg.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-bs.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-ca.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-cn.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-cs.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-da.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-de.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-el.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-en.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-es.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-fa.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-fi.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-fr.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-gl.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-he.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-hr.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-hu.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-id.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-is.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-it.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-ja.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-kr.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-lt.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-me.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-nl.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-no.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-pl.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-pt-br.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-pt.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-ro.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-ru.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-sk.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-sl.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-sr.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-sv.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-th.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-tr.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-tw.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-ua.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\grid.locale-vi.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-ar.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-bg.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-ca.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-cn.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-cs.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-da.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-de.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-el.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-en.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-es.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-fa.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-fi.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-fr.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-gl.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-he.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-hr.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-hu.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-id.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-is.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-it.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-ja.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-kr.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-lt.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-me.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-nl.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-no.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-pl.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-pt-br.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-pt.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-ro.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-ru.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-sk.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-sr.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-sv.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-th.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-tr.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-tw.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-ua.js" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-vi.js" />
+    <Content Include="Scripts\free-jqGrid\jquery.jqgrid.min.js" />
+    <Content Include="Scripts\free-jqGrid\jquery.jqgrid.src.js" />
+    <Content Include="Scripts\free-jqGrid\modules\grid.base.js" />
+    <Content Include="Scripts\free-jqGrid\modules\grid.celledit.js" />
+    <Content Include="Scripts\free-jqGrid\modules\grid.common.js" />
+    <Content Include="Scripts\free-jqGrid\modules\grid.custom.js" />
+    <Content Include="Scripts\free-jqGrid\modules\grid.filter.js" />
+    <Content Include="Scripts\free-jqGrid\modules\grid.formedit.js" />
+    <Content Include="Scripts\free-jqGrid\modules\grid.grouping.js" />
+    <Content Include="Scripts\free-jqGrid\modules\grid.import.js" />
+    <Content Include="Scripts\free-jqGrid\modules\grid.inlinedit.js" />
+    <Content Include="Scripts\free-jqGrid\modules\grid.jqueryui.js" />
+    <Content Include="Scripts\free-jqGrid\modules\grid.pivot.js" />
+    <Content Include="Scripts\free-jqGrid\modules\grid.subgrid.js" />
+    <Content Include="Scripts\free-jqGrid\modules\grid.tbltogrid.js" />
+    <Content Include="Scripts\free-jqGrid\modules\grid.treegrid.js" />
+    <Content Include="Scripts\free-jqGrid\modules\jqdnr.js" />
+    <Content Include="Scripts\free-jqGrid\modules\jqmodal.js" />
+    <Content Include="Scripts\free-jqGrid\modules\jquery.fmatter.js" />
+    <Content Include="Scripts\free-jqGrid\modules\jsonxml.js" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.base.js" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.celledit.js" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.common.js" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.custom.js" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.filter.js" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.formedit.js" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.grouping.js" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.import.js" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.inlinedit.js" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.jqueryui.js" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.pivot.js" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.subgrid.js" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.tbltogrid.js" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.treegrid.js" />
+    <Content Include="Scripts\free-jqGrid\modules\min\jqdnr.js" />
+    <Content Include="Scripts\free-jqGrid\modules\min\jqmodal.js" />
+    <Content Include="Scripts\free-jqGrid\modules\min\jquery.fmatter.js" />
+    <Content Include="Scripts\free-jqGrid\modules\min\jsonxml.js" />
+    <Content Include="Scripts\free-jqGrid\plugins\css\ui.multiselect.css" />
+    <Content Include="Scripts\free-jqGrid\plugins\css\ui.multiselect.min.css" />
+    <Content Include="Scripts\free-jqGrid\plugins\grid.odata.js" />
+    <Content Include="Scripts\free-jqGrid\plugins\jquery.contextmenu-ui.js" />
+    <Content Include="Scripts\free-jqGrid\plugins\jquery.contextmenu.js" />
+    <Content Include="Scripts\free-jqGrid\plugins\jquery.createcontexmenufromnavigatorbuttons.js" />
+    <Content Include="Scripts\free-jqGrid\plugins\jquery.jqgrid.showhidecolumnmenu.js" />
+    <Content Include="Scripts\free-jqGrid\plugins\min\grid.odata.js" />
+    <Content Include="Scripts\free-jqGrid\plugins\min\jquery.contextmenu-ui.js" />
+    <Content Include="Scripts\free-jqGrid\plugins\min\jquery.contextmenu.js" />
+    <Content Include="Scripts\free-jqGrid\plugins\min\jquery.createcontexmenufromnavigatorbuttons.js" />
+    <Content Include="Scripts\free-jqGrid\plugins\min\jquery.jqgrid.showhidecolumnmenu.js" />
+    <Content Include="Scripts\free-jqGrid\plugins\min\ui.multiselect.js" />
+    <Content Include="Scripts\free-jqGrid\plugins\min\ui.multiselect.js.map" />
+    <Content Include="Scripts\free-jqGrid\plugins\min\jquery.jqgrid.showhidecolumnmenu.js.map" />
+    <Content Include="Scripts\free-jqGrid\plugins\min\jquery.createcontexmenufromnavigatorbuttons.js.map" />
+    <Content Include="Scripts\free-jqGrid\plugins\min\jquery.contextmenu.js.map" />
+    <Content Include="Scripts\free-jqGrid\plugins\min\jquery.contextmenu-ui.js.map" />
+    <Content Include="Scripts\free-jqGrid\plugins\min\grid.odata.js.map" />
+    <Content Include="Scripts\free-jqGrid\plugins\css\ui.multiselect.min.css.map" />
+    <Content Include="Scripts\free-jqGrid\modules\min\jsonxml.js.map" />
+    <Content Include="Scripts\free-jqGrid\modules\min\jquery.fmatter.js.map" />
+    <Content Include="Scripts\free-jqGrid\modules\min\jqmodal.js.map" />
+    <Content Include="Scripts\free-jqGrid\modules\min\jqdnr.js.map" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.treegrid.js.map" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.tbltogrid.js.map" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.subgrid.js.map" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.pivot.js.map" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.jqueryui.js.map" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.inlinedit.js.map" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.import.js.map" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.grouping.js.map" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.formedit.js.map" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.filter.js.map" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.custom.js.map" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.common.js.map" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.celledit.js.map" />
+    <Content Include="Scripts\free-jqGrid\modules\min\grid.base.js.map" />
+    <Content Include="Scripts\free-jqGrid\jquery.jqgrid.min.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-vi.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-ua.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-tw.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-tr.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-th.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-sv.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-sr.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-sk.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-ru.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-ro.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-pt.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-pt-br.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-pl.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-no.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-nl.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-me.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-lt.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-kr.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-ja.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-it.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-is.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-id.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-hu.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-hr.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-he.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-gl.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-fr.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-fi.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-fa.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-es.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-en.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-el.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-de.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-da.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-cs.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-cn.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-ca.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-bg.js.map" />
+    <Content Include="Scripts\free-jqGrid\i18n\min\grid.locale-ar.js.map" />
+    <Content Include="Content\ui.jqgrid.min.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\free-jqGrid\plugins\ui.multiselect.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\Page\script.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -201,6 +432,14 @@
       <Name>PMS_Utilities</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\free-jqGrid\ts\free-jqgrid.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\jqueryui\jqueryui.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -234,7 +473,10 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.TypeScript.MSBuild.4.5.3\build\Microsoft.TypeScript.MSBuild.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.TypeScript.MSBuild.4.5.3\build\Microsoft.TypeScript.MSBuild.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.TypeScript.MSBuild.4.5.3\build\Microsoft.TypeScript.MSBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.TypeScript.MSBuild.4.5.3\build\Microsoft.TypeScript.MSBuild.targets'))" />
   </Target>
+  <Import Project="..\packages\Microsoft.TypeScript.MSBuild.4.5.3\build\Microsoft.TypeScript.MSBuild.targets" Condition="Exists('..\packages\Microsoft.TypeScript.MSBuild.4.5.3\build\Microsoft.TypeScript.MSBuild.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

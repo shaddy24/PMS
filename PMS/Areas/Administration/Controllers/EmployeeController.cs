@@ -11,11 +11,8 @@ using System.Text.RegularExpressions;
 using System.IO;
 using System.Text;
 
-
 namespace PMS.Areas.Administration.Controllers
 {
-
- 
     public class EmployeeController : Controller
     {
 
@@ -40,14 +37,12 @@ namespace PMS.Areas.Administration.Controllers
            , bool _search = false)
 
         {
-            
             IEnumerable<EmployeeInfoTableViewFilterEntity> objPersonInfoViews = null;
             EmployeeInfoTableViewFilterEntity objPersonInfoViewFilter = null;
 
             int totalRecords = 0;
             int noOfPages = 1;
             int rowStart = 1;
-
 
             try
             {
@@ -63,7 +58,7 @@ namespace PMS.Areas.Administration.Controllers
 
                 var serializer = new JavaScriptSerializer();
 
-               //_personInfoBLL = new PersonInfoBLL(_objSystemUser);
+                //_personInfoBLL = new PersonInfoBLL(_objSystemUser);
                 objPersonInfoViews = _employeeInfoBLL.GetFiltered(objPersonInfoViewFilter).ToList();
 
                 if (objPersonInfoViews != null && objPersonInfoViews.Count() > 0)
@@ -74,13 +69,12 @@ namespace PMS.Areas.Administration.Controllers
 
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                
+
             }
 
-
-            return Json(JsonRequestBehavior.AllowGet);
+            return Json(objPersonInfoViews, JsonRequestBehavior.AllowGet);
         }
 
 

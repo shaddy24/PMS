@@ -361,3 +361,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/PMS/Scripts/free-jqGrid/i18n
+/PMS/Scripts/free-jqGrid/ts
+/PMS_DAL/Scripts/free-jqGrid/ts
+/PMS_DAL/Scripts/free-jqGrid/i18n
+*.ts
